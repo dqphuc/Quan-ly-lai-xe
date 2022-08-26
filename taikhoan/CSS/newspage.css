@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 1080px;
+    margin: 0 auto;
+}
+.logo{
+    text-align: center;
+    margin: 14px 0;
+    color: brown;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul li{
+    margin: 0 22px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: blue;
+    font-size: 15;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: rgb(65, 8, 55);
+    
+}
+.active{
+    text-decoration: underline;
+}
+.content{
+    margin-top: 25px;
+    margin-right: 0px;
+}
+.post{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(221, 62, 62);
+    max-width: 80%;
+    margin: auto;
+    height: 80%;
+    align-items: center;
+    
+}*/
+.post-detail{
+    
+  
+    margin-top: 0px;
+    
+   
+}
+.post-img{
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+.desciption{
+    font-size: 14px;
+    margin: 16px 0;
+   
+}
+.btn-post{
+    padding: 8px 12px;
+    background-color: rgb(199, 32, 32);
+    color: white;
+    border: none;
+    cursor:pointer;
+}
+
+.product h2{
+    text-align: center;
+    padding: 22px 0;
+}
+.product-list{
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+}
+.product-item {
+    width:33%;
+  
+}
+
+.product-detail{
+    text-align: center;
+    padding-top: 0px;
+    /*position: absolute;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+
+}
+.product-detail h3{
+    margin: 16px;
+    font-size: 16px;
+}
+.product-price {
+    display: block;
+    margin: 12px 0;
+}
+.btn-dk{
+    padding: 8px 12px;
+    background-color: rgb(180, 57, 41);
+    color: white;
+    border: none;
+    cursor:pointer;
+}
+.text-footer {
+    background-color: rgb(192, 189, 189);
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color:rgb(228, 13, 13);
+    font-weight:bold ;
+    margin-top: 20px;
+    bottom: 0;
+    
+}

@@ -1,0 +1,285 @@
+/*body{
+    background-image: url('../images/background.png') ;
+    background-size: cover;
+    background-position-y:0px;
+   
+
+}*/
+.container{
+    max-width: auto;
+    margin: 0px auto;
+}
+#header{
+    background-color:#81786f ;
+    padding-left: 0px 0px;
+    
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    justify-items: center;
+   
+}
+*{
+    text-decoration:none;
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    }
+/*#logo{
+    padding: 5px 0px;
+}
+#logo img{
+    max-width:70px ;
+    height: auto;
+    padding-left:0em;
+    
+}*/
+
+.logo {
+        text-decoration:none;
+        font-size:1.5em;
+        color:rgb(8, 8, 66);
+        font-weight: bold;
+        padding-left:1em;
+        padding-top: 1.2em;
+        }
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 10em;
+}
+#main-menu li{
+    position: relative; 
+    
+}
+
+#main-menu li a{
+    color: white;
+    display: block;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* Thử tạo icon trang chủ*/
+#main-menu li.Trangchu::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\e3af";
+    color:rgb(201, 19, 49);
+    position:absolute;
+    top: 15px;
+    left: 0px;
+    padding: 18px 0px;
+      
+    
+}
+#main-menu ul.sub-menu {
+    position: absolute; 
+    background-color:rgba(80, 78, 78, 0.836);
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border: 1px solid #434343;
+    display: none;
+/* Định dạng submenu và đặt chế độ ẩn*/
+}
+#main-menu li:hover a{
+    color:rgb(230, 9, 46);
+}
+
+/* Khi rê chuột vào xuất hiện sub menu */
+#main-menu li:hover>ul.sub-menu {/*hover>ul chỉ hover vào menu cấp trực tiếp*/
+    display: block;
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #8b8a8a;/*tạo khung cho menu*/
+    left: 0;
+    color:rgb(255, 189, 7);
+
+}
+#main-menu ul.sub-menu li:hover>a{
+    border-bottom: 1px solid #dfb4b4;/* khi rê chuột vò khung menu đổi màu*/
+}
+
+/*#main-menu ul.sub-menu li:last-child a{
+    border: none;
+}*/
+#main-menu ul.sub-menu ul.sub-menu {
+    left: 199px;
+    top: -15px;
+}
+/* Thiết lập border khi hover*/
+#main-menu>li>a {
+    position: relative;
+}
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: red;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+   
+}#main-menu>li:hover>a::before{
+    width: 100px;
+}
+#main-menu>li.has-child::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f107";
+    color:rgb(187, 28, 62);
+    position:absolute;
+    top: 15px;
+    right: 0px;
+    padding: 18px 0px;
+     
+}
+/* Khi hover chuột vào menu con thuộc li tác động vào a chuyển màu */
+#main-menu .sub-menu li:hover>a{
+    color:rgb(218, 24, 24);
+}
+/*Tạo mũi tên cho menu con*/
+#main-menu .sub-menu>li.has-child::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f105";
+    color:rgb(201, 19, 49);
+    position:absolute;
+    top: 0px;
+    right: 10px;
+    padding: 8px 0px;
+     
+}
+/* mũi tên chuyển màu theo*/
+#main-menu .sub-menu>li.has-child:hover::after{
+    color:brown;
+}
+/*#wp-content{
+    background: #000;
+    width: auto;
+    height: auto;
+
+}*/
+.firstsection {
+    background-color: rgb(60, 66, 60);
+    height: 400px;
+}
+
+.secondsection {
+    background-color: blue;
+    height: 400px;
+}
+.thirdsection {
+    background-color: grey;
+    height: 400px;
+}
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    max-width: 80%;
+    margin: auto;
+    height: 80%;
+}
+
+.firsthalf {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf img {
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-big {
+    font-family: 'Piazzolla', serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.text-small {
+    font-size: 18px;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.section {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+.section-Left {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    padding: 0px 65px;
+}
+
+.thumbnail img {
+    width: 250px;
+    border: 2px solid rgb(139, 142, 143);
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-footer {
+    background-color: rgb(192, 189, 189);
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color:rgb(33, 135, 182);
+    font-weight:bold ;
+}
+.btn-dk {
+    text-decoration: none;
+    font-weight: bold;
+   
+}
